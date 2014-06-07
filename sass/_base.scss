@@ -1,0 +1,78 @@
+
+/* natural sizing with rem */
+html { font-size: 62.5%; } 
+body { font-size: 14px; font-size: 1.4rem; } /* =14px */
+h1   { font-size: 24px; font-size: 2.4rem; } /* =24px */
+
+/* fonts */
+html, body {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+a{
+  color: #666;
+}
+
+/* apply a natural box layout model to all elements */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;   
+	// -webkit-transition: all 0.2s ease;
+ //  -moz-transition:    all 0.2s ease;
+ //  -ms-transition:     all 0.2s ease;
+ //  -o-transition:      all 0.2s ease;
+}
+
+::selection{
+  background: #ddd;
+  color: #555;
+  text-shadow: none;
+}
+::-webkit-selection{
+  background: #ddd;
+  color: #555;
+  text-shadow: none;
+}
+::-moz-selection{
+  background: #ddd;
+  color: #555;
+  text-shadow: none;
+}
+
+.animated{
+  -webkit-transition: all 0.2s ease;
+  -moz-transition:    all 0.2s ease;
+  -ms-transition:     all 0.2s ease;
+  -o-transition:      all 0.2s ease;
+}
+.animated10{
+  -webkit-transition: all 1s ease;
+  -moz-transition:    all 1s ease;
+  -ms-transition:     all 1s ease;
+  -o-transition:      all 1s ease;  
+}
+.animated20{
+  -webkit-transition: all 2s ease;
+  -moz-transition:    all 2s ease;
+  -ms-transition:     all 2s ease;
+  -o-transition:      all 2s ease;
+}
+
+/**
+ * Nicholas Gallagher clearfix
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
