@@ -1,6 +1,6 @@
 #Buscapè
 -------
 
-Live site @ www.buscapeweb.it
+Live site: www.buscapeweb.it
 
-made with Jekyll
+Made with Compass. Built with Jekyll
