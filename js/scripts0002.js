@@ -1,5 +1,6 @@
 +(function(){
 
+console.log('See full source on the repo: https://github.com/nobitagit/Buscape');
 
 	// STATS ANIMATIONS
 	// --> REVIEWS ANIM.
@@ -102,9 +103,9 @@
 
 
 	// Hides/shows menu items for mobile users when page is *resized*
+	var nav_menu = $('ul#the-menu');
 	$(window).resize(function(){
-		var viewport = $(window).width(),
-			nav_menu = $('ul#the-menu');
+		var viewport = $(window).width();
 		if ( viewport >= mobileBreakpoint ) {
 			// remove style added by clicking the toggler so that menu
 			// displays ok when resizing over 600px
